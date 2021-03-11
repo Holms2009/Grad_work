@@ -8,6 +8,10 @@
     <title>Uber Eats</title>
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
     <link rel="stylesheet" href="style.css">
+    <script> function alertEnter() {
+        alert ('Пока эта кнопка не работает')
+     }
+     </script>
 </head>
 
 <body>
@@ -18,7 +22,7 @@
                     <img class="logo" src="img/logo.svg" alt="Логотип Uber Eats">
                 </div>
                 <div class="row col-xl-2 col-md-4 col-xs-6 end-xs">
-                    <a class="button" href="#">Войти</a>
+                    <a class="button" href="#" onclick="alertEnter()">Войти</a>
                     <a class="basket hidden-xs" href="#"><img src="img/basket.svg" alt="Корзина"></a>
                 </div>
             </div>
@@ -113,11 +117,11 @@
         </div>
         <div class="container footer-container-2">
             <div class="row between-xs">
-                <div class="col-xs-4">
+                <div class="col-xs-12 col-md-4">
                     <select class="lang-select">
                         <option value="russian" selected>Русский</option>
                         <option value="english">English</option>
-                    </select>
+                    </select><br>
                     <span class="tag"><span>#</span>UberEats</span>
                     <div class="social_block">
                         <a class="facebook" href="#"><img src="img/facebook.svg"></a>
@@ -125,14 +129,14 @@
                         <a href="#"><img src="img/instagram.svg"></a>
                     </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-12 col-md-4">
                     <ul class="footer-menu">
                         <li><a href="#">Об UberEats</a></li>
                         <li><a href="#">Станьте партнёром по доставке</a></li>
                         <li><a href="#">Станьте парнёром-рестораном</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-12 col-md-4">
                     <ul class="footer-menu">
                         <li><a href="#">Все города</a></li>
                         <li><a href="#">Цены</a></li>
@@ -148,13 +152,13 @@
         </div>
         <div class="container footer-container-4">
             <div class="row between-xs">
-                <div class="col-xs-4">
+                <div class="col-xs-12 col-md-4">
                     <div class="footer-menu"><a href="#">© 2017 Uber Technologies Inc.</a></div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-12 col-md-4">
                     <div class="footer-menu"><a href="#">Обработка персональных данных</a></div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-12 col-md-4">
                     <div class="footer-menu"><a href="#">Пользовательское соглашение</a></div>
                 </div>
             </div>

@@ -55,8 +55,17 @@ header {
 }
 
 @media screen and (max-width: 575px) {
-    .button {
-        margin-right: 8px;
+    header .end-xs {
+        padding-right: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container-4 .col-xs-12:not(:last-of-type) {
+        margin-bottom: 24px;
+}
+    .footer-container-4 .footer-menu {
+        padding-left: 8px;
     }
 }
 
@@ -247,4 +256,122 @@ footer .row {
 
 .footer-container-4 .footer-menu {
     margin: 0;
+}
+
+/*Страница ресторана*/
+
+h1 {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.banner {
+    margin-top: 72px;
+    padding: 80px 0;   
+}
+
+.banner-container {
+    background: url('img/pushkin.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.banner-card {
+    background-color: white;
+    text-align: left;
+    padding: 38px 48px;
+
+}
+
+.banner-time {
+    background-color: black;
+    color: white;
+    float: right;
+    text-align: center;
+    font-size: 12px;
+    line-height: 32px;
+    border-radius: 16px;
+    width: 94px;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 575px) {
+    .banner-card {
+        display: grid;
+        text-align: center;
+    }
+
+    .banner-card {
+        margin: 0 8px;
+        padding: 24px 48px;
+    }
+
+    .banner-time {
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+        line-height: 28px;
+    }
+
+    .banner .food-name {
+        margin-bottom: 16px;
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 30px 0;
+}
+
+.menu li{
+    padding-right: 40px;    
+}
+
+.menu a{
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #626262;
+}
+
+.menu a:hover {
+    color: #327430;
+}
+
+.line {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.dish h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.addition {
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+}
+
+.price {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.dish img {
+    float: right;
+}
+
+.dish {
+    border: 1px solid #d8d8d8;
 }
