@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Uber Eats</title>
     <script> function alertEnter() {
-       alert ('Пока эта кнопка не работает')
-    }
+            alert('Пока эта кнопка не работает')
+        }
     </script>
 </head>
 
@@ -43,7 +43,7 @@
         </div>
 
         <div class="line">
-            <div class="container">
+            <div class="container menu-container">
                 <ul class="menu">
                     <li><a href="#">Закуски</a></li>
                     <li><a href="#">Салаты</a></li>
@@ -55,38 +55,55 @@
             </div>
         </div>
 
+        <div class="container selected-category">
+            <span class="selected-category-text">Закуски</span><br>
+            <span class="category-underline"></span>
+        </div>
+
         <div class="container">
-            <div class="row between-xs start-xs">
-                <div class="col-xs-12 col-md-6 dish">
+            <div class="row between-xs dishes">
+                <div class="col-xs-12 col-lg-6 dish">
                     <img src="img/seld.png">
-                    <h3>Сельдь на бородинском хлебе</h3>
-                    <span class="addition">С яйцом и огурцом</span>
-                    <span class="price">240 ₽</span>
+                    <div class="dish-grid">
+                        <h3>Сельдь на бородинском хлебе</h3>
+                        <span class="addition">С яйцом и огурцом</span>
+                        <span class="price">240 ₽</span>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-6 dish">
+                <div class="col-xs-12 col-lg-6 dish">
                     <img src="img/assorti.png">
-                    <h3>Соленья ассорти</h3>
-                    <span class="price">320 ₽</span>
+                    <div class="dish-grid">
+                        <h3>Соленья ассорти</h3>
+                        <span class="price">320 ₽</span>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-6 dish">
+                <div class="col-xs-12 col-lg-6 dish">
                     <img src="img/mushrooms.png">
-                    <h3>Грибы маринованные</h3>
-                    <span class="price">300 ₽</span>
+                    <div class="dish-grid">
+                        <h3>Грибы маринованные</h3>
+                        <span class="price">300 ₽</span>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-6 dish">
-                    <h3>Сало домашнее с горчицей</h3>
-                    <span class="price">320 ₽</span>
-                    <img src="#">
+                <div class="col-xs-12 col-lg-6 dish">
+                    <img src="img/salo.png">
+                    <div class="dish-grid">
+                        <h3>Сало домашнее с горчицей</h3>
+                        <span class="price">320 ₽</span>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-6 dish">
-                    <h3>Малосольная семга</h3>
-                    <span class="price">390 ₽</span>
-                    <img src="#">
+                <div class="col-xs-12 col-lg-6 dish">
+                    <img src="img/semga.png">
+                    <div class="dish-grid">
+                        <h3>Малосольная семга</h3>
+                        <span class="price">390 ₽</span>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-6 dish">
-                    <h3>Язык говяжий с хреном</h3>
-                    <span class="price">350 ₽</span>
-                    <img src="#">
+                <div class="col-xs-12 col-lg-6 dish">
+                    <img src="img/toung.png">
+                    <div class="dish-grid">
+                        <h3>Язык говяжий с хреном</h3>
+                        <span class="price">350 ₽</span>
+                    </div>
                 </div>
 
             </div>

@@ -14,9 +14,8 @@ header {
 }
 
 .container {
-    max-width: 962px;
+    max-width: 956px;
     margin: 0 auto;
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -136,7 +135,7 @@ h3 {
     transition: all 0.5s;
 }
 
-.rest-card:hover {
+.rest-card:hover, .dish:hover {
     transform: scale(1.05);
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     transition: all 0.5s;
@@ -331,6 +330,28 @@ h1 {
     padding: 30px 0;
 }
 
+.category-underline {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .selected-category {
+        text-align: center;
+    }
+
+    .category-underline {
+        display: inline-block;
+        width: 50px;
+        border-top: 1px solid black;
+        padding: 0;
+        margin: 0;
+    }
+}
+
 .menu li{
     padding-right: 40px;    
 }
@@ -346,8 +367,22 @@ h1 {
     color: #327430;
 }
 
+.menu-container {
+    padding: 0;
+}
+
 .line {
     border-bottom: 1px solid #d8d8d8;
+}
+
+.selected-category {
+    padding: 56px 0 32px 0;
+}
+
+.selected-category-text {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 400;
 }
 
 .dish h3 {
@@ -355,6 +390,35 @@ h1 {
     line-height: 24px;
     font-weight: 400;
     display: inline-block;
+    margin: 0 0 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-size: 15px;
+    line-height: 21px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 576px) {
+    .dish h3 {
+        font-size: 14px;
+    }
+
+    .dish img {
+        max-height: 100%;
+    }
+
+    .dish {
+        min-width: 308px;
+        height: 102px;
+    }
+
+    .price {
+        padding-top: 16px;
+    }
 }
 
 .addition {
@@ -363,15 +427,37 @@ h1 {
     color: #626262;
 }
 
-.price {
-    font-size: 15px;
-    line-height: 21px;
-}
-
 .dish img {
     float: right;
 }
 
 .dish {
     border: 1px solid #d8d8d8;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    max-width: 470px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.dish img {
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 991px){
+    .dish {
+        margin-bottom: 30px;
+        max-width: 750px;
+        transition: all 0.5s;
+    }
+}
+
+.dish-grid {
+    display: grid;
+    padding: 16px 0 0 16px;
+}
+
+.dishes {
+    padding-bottom: 30px;
 }
